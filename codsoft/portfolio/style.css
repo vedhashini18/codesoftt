@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+
+header { background-color: #0c1c29; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+
+.logo img { height: 80px; width: 80px; border-radius: 50%; object-fit: cover; }
+
+.name h1 { color: #ffffff; margin: 0; }
+
+.name p { color: #ffffff; margin: 0; font-weight: 500; }
+
+#about { background-color: #f5f5f5; padding: 40px; text-align: center; }
+
+#about img { height: 200px; width: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 30px; }
+
+#skills { background-color: #0c1c29; padding: 40px; color: #ffffff; text-align: center; }
+
+#skills ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 20px; }
+
+#skills li { background-color: #ffffff; padding: 10px 20px; border-radius: 20px; }
+
+#projects { background-color: #f5f5f5; padding: 40px; text-align: center; }
+
+.project { background-color: #ffffff; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: left; }
+
+.project h3 { margin: 0; margin-bottom: 10px; }
+
+.project p { margin: 0; margin-bottom: 20px; color: #666666; }
+
+.project img { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px; }
+
+#resume { background-color: #0c1c29; padding: 40px; color: #ffffff; text-align: center; }
+
+#contact { background-color: #f5f5f5; padding: 40px; text-align: center; }
+
+footer { background-color: #0c1c29; padding: 20px; color: #ffffff; text-align: center; }
+
+footer p { margin: 0; }
+
+#skills li:hover { background-color: #6c757d; }
+
+.project:hover { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
