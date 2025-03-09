@@ -1,3 +1,19 @@
-Projects:
-Brain Finger Printing
-Laser Security System
+Brain Finger Printing code:
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+np.random.seed(42)
+eeg_data = np.random.rand(100, 10)  # 100 samples, 10 EEG feature points each
+labels = np.random.choice([0, 1], size=100)  # Random binary classification labels
+
+X_train, X_test, y_train, y_test = train_test_split(eeg_data, labels, test_size=0.2, random_state=42)
+
+classifier = RandomForestClassifier(n_estimators=10, random_state=42)
+classifier.fit(X_train, y_train)
+
+predictions = classifier.predict(X_test)
+
+accuracy = accuracy_score(y_test, predictions)
+print(f"Brain Fingerprinting Model Accuracy: {accuracy * 100:.2f}%")
